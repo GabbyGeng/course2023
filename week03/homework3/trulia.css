@@ -1,0 +1,235 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 20px;
+    margin: 10px;
+}
+
+header {
+    height: 35px;
+    width: 100%;
+    background-color: RGBA(32,192,99,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right {
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.brief p {
+    font-size: 13px;
+}
+
+
+#card1 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+}
+
+#card2 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+}
+
+#card3 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+}
+
+#card4 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+}
+
+#card5 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+}
+
+#card6 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+}
+
+#card7 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+}
+
+#card8 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+}
+
+#card9 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+}
+
+#card10 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+}
+
+#card11 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+}
+
+#card12 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: RGBA(232,233,234,1);
+    padding: 10px;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    height: 280px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.card-img {
+    height: 160px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card h4 {
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.icon {
+    height: 15px;
+    margin-left: 5px;
+}
+
+.card-icon p {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.card-discription p {
+    font-size: 12px;
+    color: #3b4144;
+    margin-top: 0;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.page-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: #20c063;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.page-nav p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.page-nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.discription h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.discription p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+.discription a {
+    text-decoration: none;
+    color: #20c063;
+}
+
+footer {
+    background-color: #3b4144;
+    height: 120px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+footer a {
+    font-size: 12px;
+    color: darkgray;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+footer p {
+    font-size: 10px;
+    color: darkgray;
+}
