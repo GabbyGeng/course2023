@@ -1,0 +1,231 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  
+  /* Colors */
+  /* Redish / Pink: #ff5358 */
+  /* Dark red for button hover: #e00007 */
+  /* Very light gray: #efefef */
+  
+  /* Background image links */
+  /* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+  /* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+  /* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+  /* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+
+
+
+* {
+    box-sizing: border-box;
+} 
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}  
+
+#logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+
+nav {
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.main-img {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.main-img h4 {
+    font-size: 18px;
+    color: white;
+    margin-top: -5px;
+}
+
+button {
+    color: white;
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ff5358;
+    width: 280px;
+    height: 45px;
+    margin-top: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px #e00007;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e00007;
+}
+
+.locals {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.single-locals {
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+
+.single-locals-title {
+    height: 50px;
+    background-color: rgb(227, 229, 230);
+    display: flex;
+    align-items: center;
+}
+
+.single-locals-title h4 {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.single-locals-discription {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.single-locals-discription p {
+    padding-left: 10px;
+}
+
+.neighborhoods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+.neighborhoods h1 {
+    font-size: 48px;
+    color: black;
+}
+
+.neighborhoods h4 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.cards {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.single-card {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+}
+
+#fitzroy {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg);
+    height: 280px;
+    background-size: cover;
+}
+
+#st-kilda {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg);
+    height: 280px;
+    background-size: cover;
+}
+
+#cbd {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg);
+    height: 280px;
+    background-size: cover;
+}
+
+.card-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.card-img h2{
+    font-size: 25px;
+    color: white;
+}
+
+.card-img h5 {
+    font-size: 13px;
+    color: white;
+} 
+
+.card-discription {
+    height: 60px;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: darkgray;
+    height: 160px;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer h6 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
